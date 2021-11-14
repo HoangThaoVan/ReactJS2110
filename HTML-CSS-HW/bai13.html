@@ -1,0 +1,148 @@
+<html>
+
+<head>
+</head>
+<style>
+    table,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    
+    table {
+        background-color: #2dd52d;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Bạn đã đăng ký thành công!!!";
+    }
+</script>
+
+<body>
+    <h3 style="text-align:center; color:#2dd52d">
+        Đăng ký du lịch</h3>
+    <table>
+
+        <tr>
+
+            <td style="width: 150px;">
+                <label>
+Họ và tên
+</label>
+            </td>
+            <td>
+                <input type="text" style="width:280px">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>
+Địa chỉ
+</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>
+Phone number
+</label>
+            </td>
+            <td>
+                <input type="number" style="width:150px">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label>
+                    Khách Việt Nam 
+</label>
+            </td>
+            <td><input type="checkbox">
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <label>Chọn tour
+</label>
+            </td>
+            <td>
+                <select name="tour" style="width: 180px">
+                    <optgroup label=" Miền Bắc" style="width:350px; height:55px">
+<option>
+Nha Trang- Đà Lạt
+</option>
+<option>
+Buôn Mê Thuột - Gia Lai- Kontum
+</option>
+</optgroup>
+</select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>
+Phương tiện 
+</label>
+            </td>
+            <td>
+                <input type="radio" id="mb" name="mb" value="mb">
+                <label for="mb">Máy bay</label>
+                <input type="radio" id="oto" name="oto" value="oto">
+                <label for="oto">ô tô</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <fieldset style="margin-left: 79px;margin-right: 79px;">
+                    <legend>Chọn sản phẩm tham gia </legend>
+
+                    Người lớn <textarea rows="1" cols="1"> </textarea> Trẻ em <textarea rows="1" cols="1"> </textarea>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>
+Ghi chú thêm 
+</label>
+            </td>
+
+            <td>
+                <select name="job" style="width: 199px;" size="2">
+<option>
+Có 2 trẻ em dưới 6 tuổi
+</option>
+<option>
+Có 2 người ăn chay
+</option>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align: center;" >
+ <button onclick="myFunction()">Đăng nhập</button>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align: center;" ><p id="demo" style="color:red"></p>
+</td>
+</tr>
+</table>
+</body>
+</html>
