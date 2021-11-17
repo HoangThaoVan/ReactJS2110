@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>testNumber</title>
+</head>
+<script>
+    function testNum() {
+        let n = document.getElementById("number").value
+        let answe = true
+        for (let i = 0; i <= n; i++) {
+            if ((n % 10) % 2 == 0) {
+                answe = false
+                break
+            }
+        }
+        if (answe == true) {
+            document.getElementById("answer").innerHTML = "YESSS"
+        } else {
+            document.getElementById("answer").innerHTML = "No"
+        }
+    }
+</script>
+
+<body>
+    <input type="text" id="number">
+    <input type="button" onclick="testNum()" value="Test This Number">
+    <p>All odd numbers? </p><span id="answer"></span>
+</body>
+
+</html>

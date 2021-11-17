@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Print Number</title>
+</head>
+<script>
+    function printNumber() {
+        let n = document.getElementById("number").value
+            //n = parseInt(n)
+        let html = ""
+        for (let i = 1; i <= n; i++) {
+            html += i + "<br/>"
+        }
+        document.getElementById("result").innerHTML = html
+    }
+</script>
+
+<body>
+    <form>
+        <p>Please enter number: <input type="text" id="number" />
+            <input type="button" value="Print answer" onclick="printNumber()" /></p>
+
+    </form>
+    <div id="result">
+
+    </div>
+</body>
+
+</html>
