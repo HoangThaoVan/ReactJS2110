@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //bai 11: đếm khoảng trắng
+        function countSpace(n) {
+            let count = 0
+            for (let i = 0; i < n.length; i++) {
+                if (n[i] == " ") {
+                    count++;
+                }
+            }
+            console.log(count);
+        }
+        countSpace("Hay hoc tap that cham chi")
+
+        //bai12:remove space,khoang trang,enter trong chuoi
+        function removeSpace(n) {
+            let remove
+            for (let i = 0; i < n.length; i++) {
+                remove = n.replace(/\s/g, '')
+            }
+            console.log(remove)
+        }
+        removeSpace("  Hello\s Sunny\n welcome you")
+
+        //bai13: dao nguoc chuoi
+        function reverse(n) {
+            let reStr = ""
+            for (let i = n.length - 1; i >= 0; i--) {
+                reStr += n[i]
+            }
+            console.log(reStr)
+        }
+        reverse("naV oahT gnaoH")
+
+        //bai14: Nhập vào chuỗi s1 và s2, cho biết vị trí xuất hiện của chuỗi s2 trong s1.
+        function findPosition(s1, s2) {
+            let find
+            find = s1.indexOf(s2)
+            console.log(find)
+        }
+        findPosition("私は ホアン　タオ　ヴァン", "ホアン")
+
+
+        //bai15:Viết chương trình chuẩn hóa họ tên.
+
+function standardName(n){
+    let strName= n.toLowerCase().split(" ");
+    for (let i=0;i<)
+}
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

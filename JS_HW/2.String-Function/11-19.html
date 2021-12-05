@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+    //bai 11: đếm khoảng trắng
+    function countSpace(n) {
+        let count = 0
+        for (let i = 0; i < n.length; i++) {
+            if (n[i] == " ") {
+                count++;
+            }
+        }
+        console.log(count);
+    }
+    countSpace("Hay hoc tap that cham chi")
+
+    //bai12:remove space,khoang trang,enter trong chuoi
+    function removeSpace(n) {
+        let remove
+        for (let i = 0; i < n.length; i++) {
+            remove = n.replace(/\s/g, '')
+        }
+        console.log(remove)
+    }
+    removeSpace("  Hello\s Sunny\n welcome you")
+
+    //bai13: dao nguoc chuoi
+    function reverse(n) {
+        let reStr = ""
+        for (let i = n.length - 1; i >= 0; i--) {
+            reStr += n[i]
+        }
+        console.log(reStr)
+    }
+    reverse("naV oahT gnaoH")
+
+    //bai14: Nhập vào chuỗi s1 và s2, cho biết vị trí xuất hiện của chuỗi s2 trong s1.
+    function findPosition(s1, s2) {
+        let find
+        find = s1.indexOf(s2)
+        console.log(find)
+    }
+    findPosition("私は ホアン　タオ　ヴァン", "ホアン")
+
+    //bai15:Viết chương trình chuẩn hóa họ tên.
+    function standardName(a) {
+        let str = a.toLowerCase().split(" ") //bien tat ca thanh chu thuowng
+        for (let i = 0; i < str.length; i++) {
+            str[i] = str[i].charAt(0).toUpperCase() + str[i].substring(1)
+        } //chu dau tien viet hoa, chuw thu 2 tro di la viet binh thuong
+        return str.join(" ") //ngan cach nhau
+    }
+    console.log(standardName("tHaY GiaO toI Rat GIOI Tieng ANH"))
+
+    // bai 16: Viết chương trình lấy  id name của fb.
+    function idName(a) {
+        let str = ""
+        for (let i = a.length - 1; i >= 0; i--) {
+            if (a[i] == '/') {
+                str = a.slice(i + 1)
+                break
+            }
+        }
+        console.log(str)
+    }
+    idName("https://www.facebook.com/vanht32")
+
+    //bai17:Viết hàm số tính min, max của 3 số
+    //min
+    function min(a, b, c) {
+        let minmin = a
+        if (minmin > b) {
+            minmin = b
+        } else if (minmin > c) {
+            min = c
+        }
+        console.log(minmin)
+
+    }
+    min(7, 1, 8)
+
+    //max
+
+    function max(x, y, z) {
+        let max2 = x
+        if (max2 < y) {
+            max2 = y
+        } else if (max2 < z) {
+            max2 = z
+        }
+        console.log(max2)
+    }
+    max(7, 1, 8)
+
+    //bai18:Viết hàm tìm vị trí xâu X tồn tại kề cuối trong xâu Y?
+    function findPosition(s1, s2) {
+        let S1, S2 = ""
+        S1 = s1.lastIndexOf(s2)
+        S2 = s1.slice(0, S1)
+        console.log(S2.lastIndexOf(s2))
+    }
+    findPosition("This is a beautiful day, is it?", "is")
+
+    //bai19:Hãy tính tổng các số từ 1 đến n mà không dùng for, while loop? (đệ quy, recursive)
+    //dùng đệ quy
+    function total(a) {
+        if (a == 0) {
+            return 0;
+        }
+        return a + total(a - 1)
+    }
+    console.log(total(9))
+</script>
+
+<body>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

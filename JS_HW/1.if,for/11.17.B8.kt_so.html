@@ -10,14 +10,14 @@
 <script>
     function testNum() {
         let n = document.getElementById("number").value
-        let answe = true
+        let answer = true
         for (let i = 0; i <= n; i++) {
             if ((n % 10) % 2 == 0) {
-                answe = false
+                answer = false
                 break
             }
         }
-        if (answe == true) {
+        if (answer == true) {
             document.getElementById("answer").innerHTML = "YESSS"
         } else {
             document.getElementById("answer").innerHTML = "No"
